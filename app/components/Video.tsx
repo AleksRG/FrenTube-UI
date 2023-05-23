@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 type Props = {
   img: string;
@@ -9,7 +10,10 @@ type Props = {
 };
 function Video({ img, user, title, likes, date, pro }: Props) {
   return (
-    <div className="flex flex-col w-full border-t-0 sm:max-w-sm rounded-xl h-60 border border-fuchsia-900/50 cursor-pointer">
+    <Link
+      className="flex flex-col w-full border-t-0 sm:max-w-sm rounded-xl h-60 border border-fuchsia-900/50"
+      href={"/video"}
+    >
       {pro && (
         <div className="w-full px-2 flex justify-end">
           {" "}
@@ -41,7 +45,7 @@ function Video({ img, user, title, likes, date, pro }: Props) {
           </span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
