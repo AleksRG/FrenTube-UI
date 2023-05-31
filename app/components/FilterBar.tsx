@@ -2,7 +2,7 @@ import React from "react";
 
 export default function FilterBar() {
   return (
-    <nav className="h-8w-full sm:justify-center items-center flex gap-4 overflow-x-scroll scrollbar-hide px-4 my-4">
+    <nav className="h-8 w-full sm:justify-center items-center flex gap-4 overflow-x-scroll scrollbar-hide px-4 my-4">
       <button className="w-20 h-6 px-4 border border-fuchsia-950 rounded-xl">
         All
       </button>
