@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Header from "../components/Header";
-import FilterBar from "../components/FilterBar";
+import Comment from "../components/Comment";
 import Results from "../components/Results";
 import Footer from "../components/Footer";
 import PhoneFooterMenu from "../components/PhoneFooterMenu";
@@ -17,7 +17,9 @@ function page() {
           <div className="flex flex-col w-full h-fit justify-center gap-2">
             <VideoPlayer />
             <div className="flex flex-col w-full sm:max-w-4xl items-start justify-start cursor-pointer self-center gap-2">
-              <span className="text-xl">This is just a test? Unstoppable</span>
+              <span className="text-xl">
+                {"This is just a test! What you thing?"}
+              </span>
               <div className="flex gap-2 w-full">
                 <img
                   src="https://img-cdn.magiceden.dev/rs:fill:400:400:0:0/plain/https://metadata.y00ts.com/y/12098.png"
@@ -124,7 +126,7 @@ function page() {
             </div>
             <div className="flex flex-col gap-2 px-2">
               <span className="text-xl">Comments</span>
-              <div className="w-full flex px-4  items-center h-10 rounded-2xl bg-black/20 text-sm border border-fuchsia-900/50 tracking-tight font-normal gap-2 justify-between">
+              <div className="w-full flex px-4 mb-2 items-center h-10 rounded-2xl bg-black/20 text-sm border border-fuchsia-900/50 tracking-tight font-normal gap-2 justify-between">
                 <span className="truncate w-full">I like this video...</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -141,38 +143,51 @@ function page() {
                   />
                 </svg>
               </div>
-              <div className="flex gap-2 w-full items-center">
-                <img
-                  src="https://img-cdn.magiceden.dev/rs:fill:400:400:0:0/plain/https://metadata.y00ts.com/y/12098.png"
-                  className="w-10 rounded-full"
-                />
-
-                <span className="text-sm">------ -------</span>
-              </div>
-              <div className="flex gap-2 w-full items-center">
-                <img
-                  src="https://img-cdn.magiceden.dev/rs:fill:400:400:0:0/plain/https://metadata.y00ts.com/y/12098.png"
-                  className="w-10 rounded-full"
-                />
-
-                <span className="text-sm">------ -------</span>
-              </div>
-              <div className="flex gap-2 w-full items-center">
-                <img
-                  src="https://img-cdn.magiceden.dev/rs:fill:400:400:0:0/plain/https://metadata.y00ts.com/y/12098.png"
-                  className="w-10 rounded-full"
-                />
-
-                <span className="text-sm">------ -------</span>
-              </div>
-              <div className="flex gap-2 w-full items-center">
-                <img
-                  src="https://img-cdn.magiceden.dev/rs:fill:400:400:0:0/plain/https://metadata.y00ts.com/y/12098.png"
-                  className="w-10 rounded-full"
-                />
-
-                <span className="text-sm">------ -------</span>
-              </div>
+              <Comment
+                name={"AlexRG"}
+                img={
+                  "https://img-cdn.magiceden.dev/rs:fill:400:400:0:0/plain/https://metadata.y00ts.com/y/12098.png"
+                }
+                time={"2 days ago"}
+                comment={"Yoo what's up???"}
+                likes={"15"}
+              />{" "}
+              <Comment
+                name={"AKabugu"}
+                img={
+                  "https://shuaskdidz7b4dvn4iybdvwilmbnbqr6iwwkvkndonaertcdlwga.arweave.net/kegJKGgefh4OreIwEdbIWwLQwj5FrKqpo3NASMxDXYw?ext=png"
+                }
+                time={"1 day ago"}
+                comment={"LFG Alex, this is f*cking amazing 🚀"}
+                likes={"55"}
+              />{" "}
+              <Comment
+                name={"ElonDev"}
+                img={
+                  "https://images-cdn.exchange.art/otw9EZSzCU73YXabPHRHVPZmN8DNVyo-VJwIBONiLJM?ext=fastly&quality=20&width=300&blur=80&format=pjpg&auto=webp"
+                }
+                time={"1 day ago"}
+                comment={"Nice bro, LFG 🤟"}
+                likes={"32"}
+              />
+              <Comment
+                name={"Ivan"}
+                img={
+                  "https://pbs.twimg.com/profile_images/1654548524472696834/GR4VOP4Y_400x400.png"
+                }
+                time={"1 day ago"}
+                comment={"Pamp Pamp"}
+                likes={"1K"}
+              />
+              <Comment
+                name={"G-wizz"}
+                img={
+                  "https://images-cdn.exchange.art/MMbXKlDKvv9F78YYfuSWJ2lw5IzyCQ5ueD1CRLcXZ54?ext=fastly&quality=20&width=300&blur=80&format=pjpg&auto=webp"
+                }
+                time={"1 day ago"}
+                comment={"My two cents is - it's awesome!"}
+                likes={"987"}
+              />
             </div>
           </div>
 

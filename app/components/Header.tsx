@@ -1,14 +1,17 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Header() {
   return (
     <div className="flex w-full px-4 justify-between items-center gap-1 mt-2">
       <div className="gap-4 flex items-center">
-        <img
-          src="https://cdn.discordapp.com/attachments/1073616425203273778/1110495007363829810/A_letter_tech_logo.png"
-          className="w-10 rounded-full"
-          alt=""
-        />
+        <Link href={"/"}>
+          <img
+            src="https://cdn.discordapp.com/attachments/1073616425203273778/1110495007363829810/A_letter_tech_logo.png"
+            className="w-10 rounded-full"
+            alt=""
+          />
+        </Link>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
